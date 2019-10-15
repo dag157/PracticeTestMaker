@@ -19,7 +19,7 @@ class PracticeTestMaker:
         exam_questions = []
 
         while amt_of_qs > 0:
-            element = random.randint(0, len(questions)) 
+            element = random.randint(0, len(questions)-1) 
             exam_questions.append(questions.pop(element))
             amt_of_qs -= 1
 
@@ -43,4 +43,4 @@ class PracticeTestMaker:
 
 if __name__ == '__main__':
     p = PracticeTestMaker()
-    p.createTest('cv_questions.txt',5)
+    p.createTest('cv_questions.txt',3)
