@@ -1,0 +1,3 @@
+What kind of image transformation is SIFT invariant to?
+What ratio do we use as a cue for reliability of a feature match, and why does it make sense to use that?
+How does an inverted index help us do search faster?
