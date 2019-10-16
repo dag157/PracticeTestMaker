@@ -1,3 +1,99 @@
-What kind of image transformation is SIFT invariant to?
-What ratio do we use as a cue for reliability of a feature match, and why does it make sense to use that?
-How does an inverted index help us do search faster?
+a.	What are some common types of noise?
+b.	How does the moving averaging filtering work?
+c.	What is the equation for cross-correlation filtering?
+d.	How is cross-correlation different than convolution?
+e.	What types of filters are there?
+f.	What is a linear filter?
+g.	How is a Gaussian filter different than an averaging filter?
+h.	What is the effect of the Gaussian’s sigma on the amount of blur?
+i.	Why are the Gaussian and box filters low-pass filters?
+j.	How does sharpening work?
+k.	In what ways is a median filter different than a Gaussian filter mathematically?
+l.	What is a median filter good for?
+m.	How do we deal with the border of the image when filtering?
+n.	What is separability good for? 
+o.	How can we create a “hybrid image”?
+p.	What is texture?
+q.	What is texture useful for?
+r.	How do we represent the texture of an image patch or an entire image?
+s.	What is a derivative of Gaussian filter good for?
+t.	How do we compute the similarity of two image patches using texture?
+u.	What is a filter bank? What does it contain?
+v.	How can we distinguish between tree bark and lily pond using texture?
+w.	How and why does filtering help prevent anti-aliasing effects?
+x.	What is a Laplacian pyramid?
+a.	What are local features?
+b.	Why do we need local features?
+c.	How are feature repeatability and feature discriminativity at odds with each other?
+d.	What is the intuition behind using corners as keypoints?
+e.	How do we detect corners using an auto-correlation surface E(u, v)?
+f.	How do we detect corners using summations and multiplications of image gradients in a local neighborhood?
+g.	What is the difference between covariance and invariance?
+h.	Why is the Harris corner detector invariant to intensity increase via addition? 
+i.	Why is it not invariant to intensity increase via multiplication?
+j.	Why is it covariant with respect to translation?
+k.	Why is it covariant with respect to rotation?
+l.	Why is it not invariant/covariant with respect to scale/size changes?
+m.	What does it mean to automatically select a size for keypoint extraction?
+n.	What kind of information is captured in each Difference of Gaussian image?
+o.	How does the process of local maxima extraction work for blob detection?
+p.	What does the ellipse size in a visualization of blobs represent?
+q.	Why is blob detection invariant to scale/size changes?
+r.	What is SIFT and how does it work?
+s.	What are the tradeoffs of doing 2x2 histograms of gradients for some 16x16 region, vs doing 1 histogram or not doing a histogram at all?
+t.	What kind of image transformations is SIFT invariant to? 
+u.	What ratio do we use as a cue for the reliability of a feature match, and why does it make sense to use that?
+v.	How does an inverted index help us do search faster?
+w.	What are visual words? 
+x.	What is the dimensionality of a Bag of Words representation?
+y.	What are some disadvantages of a Bag of Words representation?
+a.	How do we find edges using image gradients?
+b.	Why does noise cause a problem for edge extraction?
+c.	If needing to pre-filter the image to remove noise before edge extraction, how can we save one operation?
+d.	What is the effect of a higher threshold for edge extraction?
+e.	What is the effect of a larger Gaussian sigma for edge extraction?
+f.	Why may we need to thin edges?
+g.	Why is edge extraction not enough if we want to detect lines in images?
+h.	What is the simplest way to fit a line to a number of edge points, if we don’t care about outliers?
+i.	How does voting help deal with outliers?
+j.	What is the relation between image space and Hough space? What does a point in image space correspond to in Hough space?
+k.	How can we use gradient orientation to reduce the number of parameters in Hough space by 1?
+l.	How does K-means clustering work?
+m.	Why is clustering a chicken-and-egg problem?
+n.	How do we use clustering to segment an image?
+o.	What objective are we trying to minimize in K-means clustering?
+p.	Why can we not guarantee that K-means will converge to a global minimum of this objective?
+a.	Why is it useful to have multiple views of the same object/scene?
+b.	What does it mean to find the transformation between two images of the same object?
+c.	How can we find correspondences?
+d.	What is a global transformation?
+e.	How do we represent non-uniform scaling with a matrix?
+f.	How do we represent translation with a matrix?
+g.	What transformations can I represent with a 2x2 matrix?
+h.	What transformations can I represent with a 3x3 matrix?
+i.	What are homogeneous coordinates good for?
+j.	How many degrees of freedom do I have for affine transformations?
+k.	How many correspondences do I need in order to fit a given transformation?
+l.	What is the dimension of my Hough space if I want to use Hough transform to compute the parameters of a given transformation?
+m.	What is a homography?
+n.	How do I stitch an image mosaic using homography?
+o.	How can I rectify an image using homography?
+p.	How is depth related to the disparity in where the object projects in the two images?
+q.	What is epipolar geometry useful for?
+a.  What is [1 0; 10] * [2 1]
+b.  What is [1 2 3] * [1; 0; 1]
+c.  T/F A Gaussian Filter is a smoothing filter.
+d.  T/F A Gaussian Filter is a smoothing filter.
+e.  T/F The following filter is a linear filter: [a b c; d e f; g h i].
+f.  T/F A Gaussian filter is edge-preserving.
+g.  T/F A median filter is a linear filter.
+h.  T/F A median filter is edge-preserving.
+i.  T/F To reduce aliasing effects, we can first subsample the image.
+j.  T/F To reduce aliasing effects, we can first blur the image.
+k.  T/F The following filter will respond strongly to horizontal edges: [-1 0 1; -2 0 2; -1 0 1]
+l.  T/F Local features all our representation to be robust to occlusion.
+m.  T/F Very repeatable features prevent us from being able to detect the same feature on two slightly different versions of the same image.
+n.  T/F Edges are good keypoints to detect.
+o.  T/F A keypoint is a pixel that is fairly different from its neighbors in all directions.
+p.  T/F The SIFT descriptor completely discards gradient location.
+q.  T/F One type of possible gradient histogram is to count how many gradients we have going in each of a set of principal directions. 

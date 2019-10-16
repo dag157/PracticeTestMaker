@@ -31,9 +31,9 @@ class PracticeTestMaker:
             for question in questions:
                 sf.write('## ' + question)
                 sf.write('\n')
-                sf.write('&nbsp;')
-                sf.write('&nbsp;')
+                sf.write('Answer here')
                 sf.write('\n')
+                sf.write('<br></br>')
             
 
     def createTest(self, question_file, amt_of_qs):
