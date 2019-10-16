@@ -27,11 +27,12 @@ class PracticeTestMaker:
 
 
     def writeOutExam(self, questions):
-        with open("practice_exam.txt","w+") as sf:
+        with open("practice_exam.md","w+") as sf:
             for question in questions:
-                sf.write(question)
+                sf.write('## ' + question)
                 sf.write('\n')
-                sf.write('\n')
+                sf.write('&nbsp;')
+                sf.write('&nbsp;')
                 sf.write('\n')
             
 
