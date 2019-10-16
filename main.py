@@ -34,6 +34,7 @@ class PracticeTestMaker:
                 sf.write('Answer here')
                 sf.write('\n')
                 sf.write('<br></br>')
+                sf.write('\n')
             
 
     def createTest(self, question_file, amt_of_qs):
